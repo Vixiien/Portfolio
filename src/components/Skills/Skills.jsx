@@ -40,7 +40,7 @@ const Skills = () => (
                 />
                 <h4 className="text-sm font-bold text-gray-800 mb-2">{skill.name}</h4>
                 {skill.description && (
-                  <p className="text-[8px] text-gray-500 max-w-[220px]">
+                  <p className="text-[10px] text-gray-500 max-w-[220px]">
                     {skill.description}
                   </p>
                 )}

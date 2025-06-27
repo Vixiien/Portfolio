@@ -20,7 +20,7 @@ const Skills = () => (
       {SkillsInfo.map((category) => (
         <div
           key={category.title}
-          className="bg-gray-80 p-5 sm:p-6 md:p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300"
+          className="bg-gray-50 p-5 sm:p-6 md:p-8 rounded-2xl shadow-md border border-gray-400 hover:shadow-lg transition duration-300"
         >
           {/* Mother Card Header */}
           <h3 className="text-xl text-center sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">{category.title}</h3>

@@ -13,7 +13,7 @@ const About = () => {
         {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-2 leading-tight">
-            Hi, I am
+            Hi, I'm
           </h1>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
             Vic D. Ocasla

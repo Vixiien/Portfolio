@@ -3,8 +3,8 @@ import { FaLinkedin, FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-4 px-20">
-      <div className="flex flex-col sm:flex-row justify-between items-center text-xs text-black gap-2 sm:gap-0">
+    <footer className="bg-white dark:bg-black py-4 px-20">
+      <div className="flex flex-col sm:flex-row justify-between items-center text-xs text-black dark:text-white gap-2 sm:gap-0">
         {/* Left - Copyright */}
         <p className="text-center sm:text-left">© 2025 Vic D. Ocasla. All rights reserved.</p>
 

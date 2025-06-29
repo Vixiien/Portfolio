@@ -50,13 +50,11 @@ const About = () => {
         </div>
 
         {/* Right Side */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
-          <img
-            src={profileImage}
-            alt="Vic D. Ocasla"
-            className="w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover transform transition-transform duration-300 hover:scale-105"
-          />
-        </div>
+       <img
+          src={profileImage}
+          alt="Vic D. Ocasla"
+          className="w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover transform transition-transform duration-300 hover:scale-105 shadow-[0_0_40px_rgba(255,255,255,0.5)]"
+        />
       </div>
     </section>
   );

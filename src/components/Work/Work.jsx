@@ -37,13 +37,13 @@ const Work = () => {
   return (
     <section
       id="projects"
-      className="bg-white py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans"
+      className="bg-white dark:bg-black text-black dark:text-white py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans"
     >
       {/* Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-black">My Projects</h2>
-        <div className="w-32 h-1 bg-black mx-auto mt-4"></div>
-        <p className="text-gray-500 mt-4 text-lg max-w-xl mx-auto">
+        <h2 className="text-2xl dark:text-white sm:text-3xl md:text-4xl text-black dark:text-white">My Projects</h2>
+        <div className="w-32 h-1 bg-black dark:bg-white mx-auto mt-4"></div>
+        <p className="text-xs dark:text-white sm:text-md md:text-md text-gray-500 mt-4 text-xs max-w-xl mx-auto">
           A showcase of the projects I’ve worked on using modern tools and frameworks
         </p>
       </div>
@@ -53,7 +53,7 @@ const Work = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className=" bg-white rounded-xl shadow-md border border-gray-500 hover:shadow-lg transition-transform hover:-translate-y-1 duration-300 text-white"
+            className=" bg-white dark:bg-black rounded-xl shadow-md border border-gray-300 hover:shadow-lg transition-transform hover:-translate-y-1 duration-300 text-white"
           >
             <img
               src={project.image}
@@ -63,18 +63,15 @@ const Work = () => {
 
             <div className="p-6 flex flex-col h-full justify-between">
               <div>
-                <h3 className="text-xl font-semibold text-black mb-2">
+                <h3 className="text-xl font-semibold text-black dark:text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="text-sm text-white px-3 py-1 rounded-full border"
-                      style={{
-                        background: "black",
-                      }}
+                      className="bg-gray-300 dark:bg-purple-400 text-sm text-black px-3 py-1 rounded-full border"
                     >
                       {tag}
                     </span>
@@ -84,11 +81,7 @@ const Work = () => {
                   href="https://cocreatea.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 hover:bg-black text-white text-sm font-medium px-4 py-2 rounded-md transition"
-                  style={{
-                    background:
-                      "linear-gradient(90deg,rgb(115, 55, 219),rgb(148, 42, 247))",
-                  }}
+                  className="flex items-center justify-center gap-2 text-white text-sm font-medium px-4 py-2 rounded-md transition bg-black border border-gray-300 dark:bg-white dark:text-black"
                 >
                   <ExternalLink className="w-4 h-4" />
                   Website
@@ -104,7 +97,7 @@ const Work = () => {
         <a
           href="#projects"
           onClick={handleViewAllClick}
-          className="inline-block px-6 py-2 border border-gray-300 rounded-md text-sm text-black hover:shadow-md transition"
+          className="inline-block px-6 py-2 dark:bg-black dark:text-white bg-white border border-gray-300 rounded-md text-sm text-black hover:shadow-md transition"
         >
           View All Projects
         </a>
